@@ -1,0 +1,17 @@
+{
+  "name": "studytime",
+  "version": "1.0.0",
+  "description": "",
+  "main": "studyTime.js",
+  "scripts": {
+    "start": "node studyTime.js >> log",
+    "dev": "node studyTime.js"
+  },
+  "keywords": [],
+  "author": "apiiisit",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.24.0",
+    "node-cron": "^3.0.0"
+  }
+}
