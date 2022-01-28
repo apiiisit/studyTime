@@ -2,7 +2,7 @@ const axios = require('axios')
 const cron = require('node-cron')
 
 const postMsg = data => {
-    const url = 'https://discord.com/api/webhooks/889810261605752863/a62GCMrZL3Fe0HdZgeCwdfheuvVTAVA039vF3dOcgHI6nC5Yvt5vHDeCv-fU9BzkNvh8'
+    const url = '' // url webhook disocrd
     axios.post(url, data)
         .then(res => {
             console.log(`${new Date().toLocaleString('th-TH')} => ${data.embeds[0].title}`)
@@ -37,20 +37,20 @@ const sendMsg = (title, teacher) => {
 
 const schedules = {
     MON: [
-        { time: '09:00', title: 'Seminar in Computer Science', teacher: 'นายวรพันธ์ สาระสุรีย์ภรณ์' },
-        { time: '13:00', title: 'Human-Computer Interaction', teacher: 'ผู้ช่วยศาสตราจารย์ ดร.จุฬาลักษณ์ วัฒนานนท์' },
-        { time: '17:00', title: 'Preparation for Professional Experience in Computer Science', teacher: 'นางสาวสิริณา ช่วยเต็ม' }
+        { time: '09:00', title: 'Seminar in Computer Science', teacher: '' },
+        { time: '13:00', title: 'Human-Computer Interaction', teacher: '' },
+        { time: '17:00', title: 'Preparation for Professional Experience in Computer Science', teacher: '' }
     ],
     TUE: [
-        { time: '13:00', title: 'Data Mining', teacher: 'ผู้ช่วยศาสตราจารย์ ดร.อุไรวรรณ อินทร์แหยม' }
+        { time: '13:00', title: 'Data Mining', teacher: '' }
     ],
     WED: [
-        { time: '09:00', title: 'Application of Software for Modern Offices', teacher: 'นางสาวสิริณา ช่วยเต็ม' },
-        { time: '13:00', title: 'Mobile Application Development', teacher: 'ผู้ช่วยศาสตราจารย์ปองพล นิลพฤกษ์' },
-        { time: '17:00', title: 'Computer Science Project 1', teacher: 'นางสาวปิยนันท์ เทียบศรไชย' }
+        { time: '09:00', title: 'Application of Software for Modern Offices', teacher: '' },
+        { time: '13:00', title: 'Mobile Application Development', teacher: '' },
+        { time: '17:00', title: 'Computer Science Project 1', teacher: '' }
     ],
     FRI: [
-        { time: '13:00', title: 'Artificial Intelligence', teacher: 'นายวรพันธ์ สาระสุรีย์ภรณ์' }
+        { time: '13:00', title: 'Artificial Intelligence', teacher: '' }
     ]
 }
 
